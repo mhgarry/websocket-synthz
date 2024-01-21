@@ -1,8 +1,7 @@
 {
-  "name": "websocket-synthz",
+  "name": "synthz",
   "version": "1.0.0",
-  "type": "module",
-  "description": "A test synth application using websocket and node package manager.",
+  "description": "A test synth application",
   "main": "server.js",
   "author": "mhgarry92 <mhgarry92@gmail.com>",
   "license": "MIT",
