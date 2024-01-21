@@ -20,5 +20,10 @@ document.addEventListener('mousedown', (e) => {
       return;
     }
     key.classList.add('active');
-    synth.triggerAttack(key.dataset.key);
+    synth.triggerAttack(key.dataset.note);
+  });
+
+  document.addEventListener('keyup', (e) => {
+    keys.forEach(key => key.classList.remove('active'));
+    synth.triggerRelease();
   })
