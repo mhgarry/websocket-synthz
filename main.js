@@ -9,3 +9,7 @@ document.addEventListener('mousedown', (e) => {
     e.target.classList.add('active');
   });
   
+  document.addEventListener('mouseup', (e => {
+    keys.forEach(key => key.classList.remove('active'));
+    synth.triggerRelease();
+  }));
