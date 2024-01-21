@@ -13,3 +13,12 @@ document.addEventListener('mousedown', (e) => {
     keys.forEach(key => key.classList.remove('active'));
     synth.triggerRelease();
   }));
+
+  document.addEventListener('keydown', (e) => {
+    const key = keys.find(key => key.dataset.key === e.key);
+    if (!key) {
+      return;
+    }
+    key.classList.add('active');
+    synth.triggerAttack(key.dataset.key);
+  })
