@@ -1,0 +1,13 @@
+{
+  "name": "websocket-synthz",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A test synth application using websocket and node package manager.",
+  "main": "server.js",
+  "author": "mhgarry92 <mhgarry92@gmail.com>",
+  "license": "MIT",
+  "repository": "git@github.com:mhgarry/websocket-synthz.git",
+  "dependencies": {
+    "tone": "^14.7.77"
+  }
+}
